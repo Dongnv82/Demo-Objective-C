@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="44d-zB-aGq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XbV-29-xlh">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,6 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-64" y="109"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="F3F-L6-w9M">
@@ -113,7 +114,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ap-14-KxP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="800"/>
+            <point key="canvasLocation" x="-66" y="809"/>
+        </scene>
+        <!--Email Alert View Controller-->
+        <scene sceneID="TkK-7w-Hs6">
+            <objects>
+                <viewController id="XbV-29-xlh" customClass="Email_AlertViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g1d-5u-PrS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f93-5G-72V">
+                                <rect key="frame" x="16" y="350" width="288" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPI-0J-l9A">
+                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="30"/>
+                                        <state key="normal" title="Email"/>
+                                        <connections>
+                                            <action selector="email:" destination="XbV-29-xlh" eventType="touchUpInside" id="TTh-0I-bec"/>
+                                            <action selector="startAction:" destination="44d-zB-aGq" eventType="touchUpInside" id="jv8-aW-0gE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-gY-8hg">
+                                        <rect key="frame" x="99.5" y="0.0" width="89" height="30"/>
+                                        <state key="normal" title="Text Message"/>
+                                        <connections>
+                                            <action selector="pauseAction:" destination="44d-zB-aGq" eventType="touchUpInside" id="7g0-gQ-LTY"/>
+                                            <action selector="text:" destination="XbV-29-xlh" eventType="touchUpInside" id="Vos-bi-u5u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-69-TQz">
+                                        <rect key="frame" x="198.5" y="0.0" width="89.5" height="30"/>
+                                        <state key="normal" title="Alert"/>
+                                        <connections>
+                                            <action selector="alert:" destination="XbV-29-xlh" eventType="touchUpInside" id="6hH-nE-IaG"/>
+                                            <action selector="resumeAction:" destination="44d-zB-aGq" eventType="touchUpInside" id="zIR-cU-exL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5kn-69-TQz" firstAttribute="width" secondItem="KPI-0J-l9A" secondAttribute="width" id="DGg-Xz-BPM"/>
+                                    <constraint firstItem="Nl5-gY-8hg" firstAttribute="width" secondItem="KPI-0J-l9A" secondAttribute="width" id="JUm-Id-tpg"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f93-5G-72V" firstAttribute="leading" secondItem="cW4-J9-x5y" secondAttribute="leading" constant="16" id="Cln-g1-LNH"/>
+                            <constraint firstItem="f93-5G-72V" firstAttribute="centerX" secondItem="g1d-5u-PrS" secondAttribute="centerX" id="Noa-mI-BCO"/>
+                            <constraint firstItem="cW4-J9-x5y" firstAttribute="bottom" secondItem="f93-5G-72V" secondAttribute="bottom" constant="100" id="XwA-7m-EIb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cW4-J9-x5y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JY4-oA-Kv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799" y="808"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="AWu-wq-mcg">
