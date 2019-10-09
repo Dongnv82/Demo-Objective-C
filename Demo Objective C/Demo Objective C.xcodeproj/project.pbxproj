@@ -19,6 +19,10 @@
 		55787C8C234AEE5A000251C2 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 55787C8B234AEE5A000251C2 /* Model.m */; };
 		55787CC6234B1A81000251C2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55787CC5234B1A81000251C2 /* SecondViewController.m */; };
 		55787CCA234B24F5000251C2 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55787CC9234B24F5000251C2 /* TimerViewController.m */; };
+		5581C24C234D8748007CE47D /* SliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C24B234D8748007CE47D /* SliderViewController.m */; };
+		5581C250234DC4CF007CE47D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C24F234DC4CF007CE47D /* TableViewController.m */; };
+		5581C255234DCCBB007CE47D /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C254234DCCBB007CE47D /* CustomCell.m */; };
+		5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,14 @@
 		55787CC5234B1A81000251C2 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		55787CC8234B24F5000251C2 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		55787CC9234B24F5000251C2 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		5581C24A234D8748007CE47D /* SliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SliderViewController.h; sourceTree = "<group>"; };
+		5581C24B234D8748007CE47D /* SliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderViewController.m; sourceTree = "<group>"; };
+		5581C24E234DC4CF007CE47D /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5581C24F234DC4CF007CE47D /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		5581C253234DCCBB007CE47D /* CustomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		5581C254234DCCBB007CE47D /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		5581C257234DCDEA007CE47D /* CustomCellTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellTableViewController.h; sourceTree = "<group>"; };
+		5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,9 @@
 		55787C8F234AEF56000251C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5581C256234DCDAF007CE47D /* TableViewCustomCell */,
+				5581C24D234DC448007CE47D /* TableView */,
+				5581C248234D8728007CE47D /* Slider-Label */,
 				55681ABF234C4DE5000239A2 /* Storybroad */,
 				55681AB8234C2E4B000239A2 /* Email-Alert */,
 				55787CC7234B24DB000251C2 /* Timer */,
@@ -170,6 +185,43 @@
 				55787CC9234B24F5000251C2 /* TimerViewController.m */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		5581C248234D8728007CE47D /* Slider-Label */ = {
+			isa = PBXGroup;
+			children = (
+				5581C24A234D8748007CE47D /* SliderViewController.h */,
+				5581C24B234D8748007CE47D /* SliderViewController.m */,
+			);
+			path = "Slider-Label";
+			sourceTree = "<group>";
+		};
+		5581C24D234DC448007CE47D /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				5581C24E234DC4CF007CE47D /* TableViewController.h */,
+				5581C24F234DC4CF007CE47D /* TableViewController.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		5581C251234DCC93007CE47D /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5581C253234DCCBB007CE47D /* CustomCell.h */,
+				5581C254234DCCBB007CE47D /* CustomCell.m */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		5581C256234DCDAF007CE47D /* TableViewCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				5581C251234DCC93007CE47D /* CustomCell */,
+				5581C257234DCDEA007CE47D /* CustomCellTableViewController.h */,
+				5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */,
+			);
+			path = TableViewCustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +296,15 @@
 			files = (
 				55681ABB234C2E9E000239A2 /* Email-AlertViewController.m in Sources */,
 				55787CCA234B24F5000251C2 /* TimerViewController.m in Sources */,
+				5581C255234DCCBB007CE47D /* CustomCell.m in Sources */,
 				55787CC6234B1A81000251C2 /* SecondViewController.m in Sources */,
+				5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */,
+				5581C250234DC4CF007CE47D /* TableViewController.m in Sources */,
 				55787C78234AD3A4000251C2 /* ViewController.m in Sources */,
 				55787C83234AD3A5000251C2 /* main.m in Sources */,
 				55681AC2234C4E1D000239A2 /* StorybroadViewController.m in Sources */,
 				55787C75234AD3A4000251C2 /* AppDelegate.m in Sources */,
+				5581C24C234D8748007CE47D /* SliderViewController.m in Sources */,
 				55787C8C234AEE5A000251C2 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,6 +10,7 @@
 
 @interface SecondViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *result;
+- (IBAction)alertAction:(id)sender;
 
 @end
 
@@ -21,14 +22,17 @@
     NSLog(@"%@ /n /n /n ",_str);
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)alertAction:(id)sender {
+    UIAlertView *alert =[[UIAlertView alloc]initWithTitle:@"Alert" message:@"this is show message" delegate:self cancelButtonTitle:@"Cancle" otherButtonTitles:@"action1",@"action2", nil];
+    [alert show];
 }
-*/
-
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (buttonIndex == 0) {
+        //Cancle
+        NSLog(@"cancle");
+    }else if (buttonIndex == 1) {
+        //action1
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.google.com"]];
+    }
+}
 @end

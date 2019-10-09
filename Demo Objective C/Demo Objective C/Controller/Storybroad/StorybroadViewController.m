@@ -21,30 +21,37 @@
 @end
 
 @implementation StorybroadViewController
-
+@synthesize textField;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [_activityInd stopAnimating];
     _activityInd.hidesWhenStopped = YES;
-    _textField.delegate = self;
-    _textField.placeholder = @"enter text";
+    textField.delegate = self;
+    textField.placeholder = @"enter text";
+    textField.borderStyle = UITextBorderStyleLine;
+    [textField.layer setCornerRadius:15];
+    textField.backgroundColor = [UIColor colorWithRed:0/256.0 green:84/256.0 blue:129/256.0 alpha:1];
+    textField.textColor = [UIColor whiteColor];
+    textField.textAlignment = NSTextAlignmentLeft;
+    textField.font = [UIFont fontWithName:@"optima" size:18];
+    textField.keyboardType=UIKeyboardTypeEmailAddress;
     _textField2.secureTextEntry = YES;
     _textField2.placeholder = @"Enter text";
+    _textField2.borderStyle = UITextBorderStyleNone;
     _switchVar.onTintColor = [UIColor blueColor];
 }
-
 
 - (IBAction)action:(id)sender {
     if ([sender tag] == 1) {
         NSLog(@"start is pressed");
         [_activityInd startAnimating];
-        _textField.text = @"indicator has started";
+        textField.text = @"indicator has started";
         
     }else if ([sender tag] == 2) {
         NSLog(@"stop is pressed");
         [_activityInd stopAnimating];
-        _textField.text = @"indicator has stopped";
+        textField.text = @"indicator has stopped";
     }
 }
 
