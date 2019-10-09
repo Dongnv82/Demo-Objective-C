@@ -23,6 +23,8 @@
 		5581C250234DC4CF007CE47D /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C24F234DC4CF007CE47D /* TableViewController.m */; };
 		5581C255234DCCBB007CE47D /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C254234DCCBB007CE47D /* CustomCell.m */; };
 		5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */; };
+		5581C25D234DE227007CE47D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C25C234DE227007CE47D /* CollectionViewController.m */; };
+		5581C260234DE714007CE47D /* DetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C25F234DE714007CE47D /* DetailCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,10 @@
 		5581C254234DCCBB007CE47D /* CustomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		5581C257234DCDEA007CE47D /* CustomCellTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellTableViewController.h; sourceTree = "<group>"; };
 		5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellTableViewController.m; sourceTree = "<group>"; };
+		5581C25B234DE227007CE47D /* CollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		5581C25C234DE227007CE47D /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		5581C25E234DE714007CE47D /* DetailCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewController.h; sourceTree = "<group>"; };
+		5581C25F234DE714007CE47D /* DetailCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 		55787C8F234AEF56000251C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5581C25A234DE12B007CE47D /* CollectionView */,
 				5581C256234DCDAF007CE47D /* TableViewCustomCell */,
 				5581C24D234DC448007CE47D /* TableView */,
 				5581C248234D8728007CE47D /* Slider-Label */,
@@ -222,6 +229,17 @@
 				5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */,
 			);
 			path = TableViewCustomCell;
+			sourceTree = "<group>";
+		};
+		5581C25A234DE12B007CE47D /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				5581C25B234DE227007CE47D /* CollectionViewController.h */,
+				5581C25C234DE227007CE47D /* CollectionViewController.m */,
+				5581C25E234DE714007CE47D /* DetailCollectionViewController.h */,
+				5581C25F234DE714007CE47D /* DetailCollectionViewController.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +322,8 @@
 				55787C83234AD3A5000251C2 /* main.m in Sources */,
 				55681AC2234C4E1D000239A2 /* StorybroadViewController.m in Sources */,
 				55787C75234AD3A4000251C2 /* AppDelegate.m in Sources */,
+				5581C260234DE714007CE47D /* DetailCollectionViewController.m in Sources */,
+				5581C25D234DE227007CE47D /* CollectionViewController.m in Sources */,
 				5581C24C234D8748007CE47D /* SliderViewController.m in Sources */,
 				55787C8C234AEE5A000251C2 /* Model.m in Sources */,
 			);
