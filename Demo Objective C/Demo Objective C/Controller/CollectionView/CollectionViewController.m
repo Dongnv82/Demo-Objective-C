@@ -36,6 +36,12 @@
     return cell;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    DetailCollectionViewController *detailVC = [self.storyboard instantiateViewControllerWithIdentifier:@"detail"];
+    detailVC.strImg = [_arrImage objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGSize sizeItem = CGSizeZero;
     CGRect screenBounds = [[UIScreen mainScreen] bounds];

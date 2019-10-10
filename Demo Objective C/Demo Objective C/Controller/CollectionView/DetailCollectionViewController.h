@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailCollectionViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (strong, nonatomic) NSString *strImg;
 @end
 

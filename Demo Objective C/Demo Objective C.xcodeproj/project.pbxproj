@@ -25,6 +25,10 @@
 		5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C258234DCDEA007CE47D /* CustomCellTableViewController.m */; };
 		5581C25D234DE227007CE47D /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C25C234DE227007CE47D /* CollectionViewController.m */; };
 		5581C260234DE714007CE47D /* DetailCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5581C25F234DE714007CE47D /* DetailCollectionViewController.m */; };
+		55E46A74234EE0530072112B /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E46A73234EE0530072112B /* PickerViewController.m */; };
+		55E46A78234F09580072112B /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E46A77234F09580072112B /* SegmentViewController.m */; };
+		55E46A7C234F247D0072112B /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E46A7B234F247D0072112B /* LocalNotificationViewController.m */; };
+		55E46A7E234F257B0072112B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E46A7D234F257B0072112B /* UserNotifications.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +65,13 @@
 		5581C25C234DE227007CE47D /* CollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		5581C25E234DE714007CE47D /* DetailCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewController.h; sourceTree = "<group>"; };
 		5581C25F234DE714007CE47D /* DetailCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewController.m; sourceTree = "<group>"; };
+		55E46A72234EE0530072112B /* PickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		55E46A73234EE0530072112B /* PickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		55E46A76234F09580072112B /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		55E46A77234F09580072112B /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		55E46A7A234F247D0072112B /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
+		55E46A7B234F247D0072112B /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
+		55E46A7D234F257B0072112B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55E46A7E234F257B0072112B /* UserNotifications.framework in Frameworks */,
 				55681ABE234C2EBD000239A2 /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +99,7 @@
 		55681ABC234C2EBD000239A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55E46A7D234F257B0072112B /* UserNotifications.framework */,
 				55681ABD234C2EBD000239A2 /* MessageUI.framework */,
 			);
 			name = Frameworks;
@@ -162,6 +175,9 @@
 		55787C8F234AEF56000251C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				55E46A79234F23570072112B /* LocalNotification */,
+				55E46A75234F09160072112B /* Segment Control */,
+				55E46A71234EE0220072112B /* PickerView */,
 				5581C25A234DE12B007CE47D /* CollectionView */,
 				5581C256234DCDAF007CE47D /* TableViewCustomCell */,
 				5581C24D234DC448007CE47D /* TableView */,
@@ -242,6 +258,33 @@
 			path = CollectionView;
 			sourceTree = "<group>";
 		};
+		55E46A71234EE0220072112B /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				55E46A72234EE0530072112B /* PickerViewController.h */,
+				55E46A73234EE0530072112B /* PickerViewController.m */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		55E46A75234F09160072112B /* Segment Control */ = {
+			isa = PBXGroup;
+			children = (
+				55E46A76234F09580072112B /* SegmentViewController.h */,
+				55E46A77234F09580072112B /* SegmentViewController.m */,
+			);
+			path = "Segment Control";
+			sourceTree = "<group>";
+		};
+		55E46A79234F23570072112B /* LocalNotification */ = {
+			isa = PBXGroup;
+			children = (
+				55E46A7A234F247D0072112B /* LocalNotificationViewController.h */,
+				55E46A7B234F247D0072112B /* LocalNotificationViewController.m */,
+			);
+			path = LocalNotification;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,9 +359,12 @@
 				55787CCA234B24F5000251C2 /* TimerViewController.m in Sources */,
 				5581C255234DCCBB007CE47D /* CustomCell.m in Sources */,
 				55787CC6234B1A81000251C2 /* SecondViewController.m in Sources */,
+				55E46A78234F09580072112B /* SegmentViewController.m in Sources */,
 				5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */,
+				55E46A7C234F247D0072112B /* LocalNotificationViewController.m in Sources */,
 				5581C250234DC4CF007CE47D /* TableViewController.m in Sources */,
 				55787C78234AD3A4000251C2 /* ViewController.m in Sources */,
+				55E46A74234EE0530072112B /* PickerViewController.m in Sources */,
 				55787C83234AD3A5000251C2 /* main.m in Sources */,
 				55681AC2234C4E1D000239A2 /* StorybroadViewController.m in Sources */,
 				55787C75234AD3A4000251C2 /* AppDelegate.m in Sources */,
