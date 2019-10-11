@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3023BB6CA4A4CA86B6C3B939 /* libPods-Demo Objective C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFDEB923399B14E32383B9C /* libPods-Demo Objective C.a */; };
 		554A13D0235026F000742588 /* SideBarMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13CF235026F000742588 /* SideBarMenuViewController.m */; };
 		554A13D323502C0400742588 /* CustomCellMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13D223502C0400742588 /* CustomCellMenu.m */; };
 		55681ABB234C2E9E000239A2 /* Email-AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55681ABA234C2E9E000239A2 /* Email-AlertViewController.m */; };
@@ -95,6 +96,9 @@
 		55FECD4323503EF200F9F33F /* ExpandingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
 		55FECD462350753D00F9F33F /* FacebookIntegrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookIntegrationViewController.h; sourceTree = "<group>"; };
 		55FECD472350753D00F9F33F /* FacebookIntegrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookIntegrationViewController.m; sourceTree = "<group>"; };
+		900DA06BE578546A18D374EE /* Pods-Demo Objective C.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo Objective C.release.xcconfig"; path = "Target Support Files/Pods-Demo Objective C/Pods-Demo Objective C.release.xcconfig"; sourceTree = "<group>"; };
+		DEFDEB923399B14E32383B9C /* libPods-Demo Objective C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Demo Objective C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF918A79D4FD0EACAA4EAF98 /* Pods-Demo Objective C.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo Objective C.debug.xcconfig"; path = "Target Support Files/Pods-Demo Objective C/Pods-Demo Objective C.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,12 +108,22 @@
 			files = (
 				55E46A7E234F257B0072112B /* UserNotifications.framework in Frameworks */,
 				55681ABE234C2EBD000239A2 /* MessageUI.framework in Frameworks */,
+				3023BB6CA4A4CA86B6C3B939 /* libPods-Demo Objective C.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27ECED84F3D99FE39C8274EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF918A79D4FD0EACAA4EAF98 /* Pods-Demo Objective C.debug.xcconfig */,
+				900DA06BE578546A18D374EE /* Pods-Demo Objective C.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		554A13CD235023F700742588 /* SideBar Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +150,7 @@
 			children = (
 				55E46A7D234F257B0072112B /* UserNotifications.framework */,
 				55681ABD234C2EBD000239A2 /* MessageUI.framework */,
+				DEFDEB923399B14E32383B9C /* libPods-Demo Objective C.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +170,7 @@
 				55787C72234AD3A4000251C2 /* Demo Objective C */,
 				55787C71234AD3A4000251C2 /* Products */,
 				55681ABC234C2EBD000239A2 /* Frameworks */,
+				27ECED84F3D99FE39C8274EB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -370,9 +386,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55787C86234AD3A5000251C2 /* Build configuration list for PBXNativeTarget "Demo Objective C" */;
 			buildPhases = (
+				CEB691BA9BFAB33ED0A7EE3F /* [CP] Check Pods Manifest.lock */,
 				55787C6C234AD3A4000251C2 /* Sources */,
 				55787C6D234AD3A4000251C2 /* Frameworks */,
 				55787C6E234AD3A4000251C2 /* Resources */,
+				F43BB3895B45B9B17E959B0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -428,6 +446,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEB691BA9BFAB33ED0A7EE3F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Demo Objective C-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43BB3895B45B9B17E959B0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo Objective C/Pods-Demo Objective C-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo Objective C/Pods-Demo Objective C-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55787C6C234AD3A4000251C2 /* Sources */ = {
@@ -538,6 +603,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -590,6 +656,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -597,6 +664,7 @@
 		};
 		55787C87234AD3A5000251C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF918A79D4FD0EACAA4EAF98 /* Pods-Demo Objective C.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +682,7 @@
 		};
 		55787C88234AD3A5000251C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 900DA06BE578546A18D374EE /* Pods-Demo Objective C.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
