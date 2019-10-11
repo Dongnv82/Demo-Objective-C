@@ -12,6 +12,7 @@
 - (IBAction)email:(id)sender;
 - (IBAction)text:(id)sender;
 - (IBAction)alert:(id)sender;
+- (IBAction)login:(id)sender;
 
 
 @end
@@ -70,5 +71,28 @@
         textField.secureTextEntry = YES;
     }];
     [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (IBAction)login:(id)sender {
+    // Title and message aler
+    UIAlertController *alerController = [UIAlertController alertControllerWithTitle:@"Login" message:@"input account name and password" preferredStyle:UIAlertControllerStyleAlert];
+    // First textfield account name
+    [alerController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"UserName or Email";
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+//        textField.keyboardType = UIKeyboardTypeEmailAddress;
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    }];
+    // Password textfield
+    [alerController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"password";
+        textField.borderStyle = UITextBorderStyleRoundedRect;
+        textField.secureTextEntry = YES;
+        textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    }];
+    // add button submit
+    [alerController addAction:[UIAlertAction actionWithTitle:@"Login" style:UIAlertActionStyleDefault handler:nil]];
+    // alertcontroller show
+    [self presentViewController:alerController animated:YES completion:nil];
 }
 @end

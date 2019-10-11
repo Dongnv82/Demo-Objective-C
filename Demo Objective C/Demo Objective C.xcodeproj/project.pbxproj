@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		554A13D0235026F000742588 /* SideBarMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13CF235026F000742588 /* SideBarMenuViewController.m */; };
+		554A13D323502C0400742588 /* CustomCellMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13D223502C0400742588 /* CustomCellMenu.m */; };
 		55681ABB234C2E9E000239A2 /* Email-AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55681ABA234C2E9E000239A2 /* Email-AlertViewController.m */; };
 		55681ABE234C2EBD000239A2 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55681ABD234C2EBD000239A2 /* MessageUI.framework */; };
 		55681AC2234C4E1D000239A2 /* StorybroadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55681AC1234C4E1D000239A2 /* StorybroadViewController.m */; };
@@ -29,9 +31,19 @@
 		55E46A78234F09580072112B /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E46A77234F09580072112B /* SegmentViewController.m */; };
 		55E46A7C234F247D0072112B /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55E46A7B234F247D0072112B /* LocalNotificationViewController.m */; };
 		55E46A7E234F257B0072112B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E46A7D234F257B0072112B /* UserNotifications.framework */; };
+		55FECD372350385F00F9F33F /* GoogleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FECD362350385F00F9F33F /* GoogleViewController.m */; };
+		55FECD3A2350387B00F9F33F /* FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FECD392350387B00F9F33F /* FacebookViewController.m */; };
+		55FECD3E23503D9B00F9F33F /* ExpandingAndCollapsingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FECD3D23503D9B00F9F33F /* ExpandingAndCollapsingViewController.m */; };
+		55FECD4123503EDC00F9F33F /* ExpandingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FECD4023503EDC00F9F33F /* ExpandingCell.xib */; };
+		55FECD4423503EF200F9F33F /* ExpandingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FECD4323503EF200F9F33F /* ExpandingCell.m */; };
+		55FECD482350753D00F9F33F /* FacebookIntegrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FECD472350753D00F9F33F /* FacebookIntegrationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		554A13CE235026F000742588 /* SideBarMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarMenuViewController.h; sourceTree = "<group>"; };
+		554A13CF235026F000742588 /* SideBarMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarMenuViewController.m; sourceTree = "<group>"; };
+		554A13D123502C0400742588 /* CustomCellMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellMenu.h; sourceTree = "<group>"; };
+		554A13D223502C0400742588 /* CustomCellMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCellMenu.m; sourceTree = "<group>"; };
 		55681AB9234C2E9E000239A2 /* Email-AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Email-AlertViewController.h"; sourceTree = "<group>"; };
 		55681ABA234C2E9E000239A2 /* Email-AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Email-AlertViewController.m"; sourceTree = "<group>"; };
 		55681ABD234C2EBD000239A2 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -72,6 +84,17 @@
 		55E46A7A234F247D0072112B /* LocalNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
 		55E46A7B234F247D0072112B /* LocalNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
 		55E46A7D234F257B0072112B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		55FECD352350385F00F9F33F /* GoogleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleViewController.h; sourceTree = "<group>"; };
+		55FECD362350385F00F9F33F /* GoogleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleViewController.m; sourceTree = "<group>"; };
+		55FECD382350387B00F9F33F /* FacebookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookViewController.h; sourceTree = "<group>"; };
+		55FECD392350387B00F9F33F /* FacebookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookViewController.m; sourceTree = "<group>"; };
+		55FECD3C23503D9B00F9F33F /* ExpandingAndCollapsingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandingAndCollapsingViewController.h; sourceTree = "<group>"; };
+		55FECD3D23503D9B00F9F33F /* ExpandingAndCollapsingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingAndCollapsingViewController.m; sourceTree = "<group>"; };
+		55FECD4023503EDC00F9F33F /* ExpandingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpandingCell.xib; sourceTree = "<group>"; };
+		55FECD4223503EF200F9F33F /* ExpandingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExpandingCell.h; sourceTree = "<group>"; };
+		55FECD4323503EF200F9F33F /* ExpandingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingCell.m; sourceTree = "<group>"; };
+		55FECD462350753D00F9F33F /* FacebookIntegrationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FacebookIntegrationViewController.h; sourceTree = "<group>"; };
+		55FECD472350753D00F9F33F /* FacebookIntegrationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookIntegrationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +110,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554A13CD235023F700742588 /* SideBar Menu */ = {
+			isa = PBXGroup;
+			children = (
+				55FECD342350380700F9F33F /* DetailController */,
+				554A13CE235026F000742588 /* SideBarMenuViewController.h */,
+				554A13CF235026F000742588 /* SideBarMenuViewController.m */,
+				554A13D123502C0400742588 /* CustomCellMenu.h */,
+				554A13D223502C0400742588 /* CustomCellMenu.m */,
+			);
+			path = "SideBar Menu";
+			sourceTree = "<group>";
+		};
 		55681AB8234C2E4B000239A2 /* Email-Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +210,9 @@
 		55787C8F234AEF56000251C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				55FECD45235074FB00F9F33F /* Facebook Integration */,
+				55FECD3B23503CD000F9F33F /* ExpandingAndCollapsingTableView */,
+				554A13CD235023F700742588 /* SideBar Menu */,
 				55E46A79234F23570072112B /* LocalNotification */,
 				55E46A75234F09160072112B /* Segment Control */,
 				55E46A71234EE0220072112B /* PickerView */,
@@ -285,6 +323,46 @@
 			path = LocalNotification;
 			sourceTree = "<group>";
 		};
+		55FECD342350380700F9F33F /* DetailController */ = {
+			isa = PBXGroup;
+			children = (
+				55FECD352350385F00F9F33F /* GoogleViewController.h */,
+				55FECD362350385F00F9F33F /* GoogleViewController.m */,
+				55FECD382350387B00F9F33F /* FacebookViewController.h */,
+				55FECD392350387B00F9F33F /* FacebookViewController.m */,
+			);
+			path = DetailController;
+			sourceTree = "<group>";
+		};
+		55FECD3B23503CD000F9F33F /* ExpandingAndCollapsingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				55FECD3F23503EA000F9F33F /* ExpandingCell */,
+				55FECD3C23503D9B00F9F33F /* ExpandingAndCollapsingViewController.h */,
+				55FECD3D23503D9B00F9F33F /* ExpandingAndCollapsingViewController.m */,
+			);
+			path = ExpandingAndCollapsingTableView;
+			sourceTree = "<group>";
+		};
+		55FECD3F23503EA000F9F33F /* ExpandingCell */ = {
+			isa = PBXGroup;
+			children = (
+				55FECD4023503EDC00F9F33F /* ExpandingCell.xib */,
+				55FECD4223503EF200F9F33F /* ExpandingCell.h */,
+				55FECD4323503EF200F9F33F /* ExpandingCell.m */,
+			);
+			path = ExpandingCell;
+			sourceTree = "<group>";
+		};
+		55FECD45235074FB00F9F33F /* Facebook Integration */ = {
+			isa = PBXGroup;
+			children = (
+				55FECD462350753D00F9F33F /* FacebookIntegrationViewController.h */,
+				55FECD472350753D00F9F33F /* FacebookIntegrationViewController.m */,
+			);
+			path = "Facebook Integration";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,6 +420,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55FECD4123503EDC00F9F33F /* ExpandingCell.xib in Resources */,
 				55787C80234AD3A5000251C2 /* LaunchScreen.storyboard in Resources */,
 				55787C7D234AD3A5000251C2 /* Assets.xcassets in Resources */,
 				55787C7B234AD3A4000251C2 /* Main.storyboard in Resources */,
@@ -356,14 +435,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				55681ABB234C2E9E000239A2 /* Email-AlertViewController.m in Sources */,
+				55FECD3E23503D9B00F9F33F /* ExpandingAndCollapsingViewController.m in Sources */,
 				55787CCA234B24F5000251C2 /* TimerViewController.m in Sources */,
+				55FECD482350753D00F9F33F /* FacebookIntegrationViewController.m in Sources */,
 				5581C255234DCCBB007CE47D /* CustomCell.m in Sources */,
 				55787CC6234B1A81000251C2 /* SecondViewController.m in Sources */,
+				554A13D323502C0400742588 /* CustomCellMenu.m in Sources */,
+				55FECD372350385F00F9F33F /* GoogleViewController.m in Sources */,
+				554A13D0235026F000742588 /* SideBarMenuViewController.m in Sources */,
 				55E46A78234F09580072112B /* SegmentViewController.m in Sources */,
 				5581C259234DCDEA007CE47D /* CustomCellTableViewController.m in Sources */,
+				55FECD3A2350387B00F9F33F /* FacebookViewController.m in Sources */,
 				55E46A7C234F247D0072112B /* LocalNotificationViewController.m in Sources */,
 				5581C250234DC4CF007CE47D /* TableViewController.m in Sources */,
 				55787C78234AD3A4000251C2 /* ViewController.m in Sources */,
+				55FECD4423503EF200F9F33F /* ExpandingCell.m in Sources */,
 				55E46A74234EE0530072112B /* PickerViewController.m in Sources */,
 				55787C83234AD3A5000251C2 /* main.m in Sources */,
 				55681AC2234C4E1D000239A2 /* StorybroadViewController.m in Sources */,
