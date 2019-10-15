@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3023BB6CA4A4CA86B6C3B939 /* libPods-Demo Objective C.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEFDEB923399B14E32383B9C /* libPods-Demo Objective C.a */; };
+		5511DCF92355630100BF3FE9 /* ProtocolAndDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5511DCF82355630100BF3FE9 /* ProtocolAndDelegateViewController.m */; };
+		5511DCFC2355653500BF3FE9 /* ProtocolAndDelegateVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5511DCFB2355653500BF3FE9 /* ProtocolAndDelegateVC2.m */; };
 		554A13D0235026F000742588 /* SideBarMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13CF235026F000742588 /* SideBarMenuViewController.m */; };
 		554A13D323502C0400742588 /* CustomCellMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 554A13D223502C0400742588 /* CustomCellMenu.m */; };
 		55681ABB234C2E9E000239A2 /* Email-AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55681ABA234C2E9E000239A2 /* Email-AlertViewController.m */; };
@@ -41,6 +43,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5511DCF72355630100BF3FE9 /* ProtocolAndDelegateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolAndDelegateViewController.h; sourceTree = "<group>"; };
+		5511DCF82355630100BF3FE9 /* ProtocolAndDelegateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolAndDelegateViewController.m; sourceTree = "<group>"; };
+		5511DCFA2355653500BF3FE9 /* ProtocolAndDelegateVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolAndDelegateVC2.h; sourceTree = "<group>"; };
+		5511DCFB2355653500BF3FE9 /* ProtocolAndDelegateVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolAndDelegateVC2.m; sourceTree = "<group>"; };
 		554A13CE235026F000742588 /* SideBarMenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarMenuViewController.h; sourceTree = "<group>"; };
 		554A13CF235026F000742588 /* SideBarMenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarMenuViewController.m; sourceTree = "<group>"; };
 		554A13D123502C0400742588 /* CustomCellMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCellMenu.h; sourceTree = "<group>"; };
@@ -122,6 +128,17 @@
 				900DA06BE578546A18D374EE /* Pods-Demo Objective C.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5511DCF6235562C900BF3FE9 /* ProtocolAndDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5511DCF72355630100BF3FE9 /* ProtocolAndDelegateViewController.h */,
+				5511DCF82355630100BF3FE9 /* ProtocolAndDelegateViewController.m */,
+				5511DCFA2355653500BF3FE9 /* ProtocolAndDelegateVC2.h */,
+				5511DCFB2355653500BF3FE9 /* ProtocolAndDelegateVC2.m */,
+			);
+			path = ProtocolAndDelegate;
 			sourceTree = "<group>";
 		};
 		554A13CD235023F700742588 /* SideBar Menu */ = {
@@ -226,6 +243,7 @@
 		55787C8F234AEF56000251C2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5511DCF6235562C900BF3FE9 /* ProtocolAndDelegate */,
 				55FECD45235074FB00F9F33F /* Facebook Integration */,
 				55FECD3B23503CD000F9F33F /* ExpandingAndCollapsingTableView */,
 				554A13CD235023F700742588 /* SideBar Menu */,
@@ -504,6 +522,7 @@
 				55787CCA234B24F5000251C2 /* TimerViewController.m in Sources */,
 				55FECD482350753D00F9F33F /* FacebookIntegrationViewController.m in Sources */,
 				5581C255234DCCBB007CE47D /* CustomCell.m in Sources */,
+				5511DCF92355630100BF3FE9 /* ProtocolAndDelegateViewController.m in Sources */,
 				55787CC6234B1A81000251C2 /* SecondViewController.m in Sources */,
 				554A13D323502C0400742588 /* CustomCellMenu.m in Sources */,
 				55FECD372350385F00F9F33F /* GoogleViewController.m in Sources */,
@@ -522,6 +541,7 @@
 				5581C260234DE714007CE47D /* DetailCollectionViewController.m in Sources */,
 				5581C25D234DE227007CE47D /* CollectionViewController.m in Sources */,
 				5581C24C234D8748007CE47D /* SliderViewController.m in Sources */,
+				5511DCFC2355653500BF3FE9 /* ProtocolAndDelegateVC2.m in Sources */,
 				55787C8C234AEE5A000251C2 /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
